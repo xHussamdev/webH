@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Roboto"); 
+@import url("https://fonts.googleapis.com/css?family=Poppins|Roboto"); 
+.width-grid { 
+    margin: 0; 
+    display: grid; 
+    grid-gap: 1rem; 
+    gap: 1rem; 
+    grid-template-columns: 1fr 1280px 1fr;
+} 
+
+.spacing { 
+    margin-bottom: 250px;
+} 
+
+.gradient { 
+    background: var(--bg-Image) no-repeat; 
+    background-size: 100% 700px;
+} 
+
+body { 
+    scroll-behavior: smooth; 
+    font-family: Poppins,sans-serif; 
+    text-decoration: none; 
+    margin: 0;
+} 
+
+html { 
+    scroll-behavior: smooth; 
+    font-family: Poppins,sans-serif; 
+    text-decoration: none; 
+    margin: 0;
+} 
+
+:root { 
+    --primaryText: #70707a; 
+    --secondaryText: #4b4b4f; 
+    --tertiaryText: #ffffff; 
+    --primaryAccent: #020090; 
+    --secondaryAccent: #020090; 
+    --brightAccent: #f0f0ff; 
+    --shadowColor: rgba(130, 129, 168, 0.444); 
+} 
+
+.content { 
+    grid-column-start: 2; 
+    grid-column-end: 3;
+} 
+
+.grid { 
+    display: grid; 
+    grid-gap: 1rem; 
+    gap: 1rem; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    -webkit-align-items: center; 
+    align-items: center;
+} 
+
+.hero { 
+    height: 650px; 
+    grid-template-rows: 3fr 1fr;
+} 
+
+.hero-image { 
+    grid-column-start: 3; 
+    grid-column-end: 6; 
+    background-image: url(dev-ed-wave.png); 
+    background-image: -webkit-image-set(url(dev-ed-wave.png) 2x,url(https://lukaspistrol.com/_next/static/media/avatar@3x.3089016b.png) 3x); 
+    background-image: image-set(url(dev-ed-wave.png) 2x,url(dev-ed-wave.png) 3x); 
+    border-radius: 50%;
+    background-repeat: no-repeat; 
+    background-position: 100%; 
+    filter: drop-shadow(0 8px 24px rgba(88,86,214,.15)); 
+    -webkit-filter: drop-shadow(0 8px 24px rgba(88,86,214,.15)); 
+    height: 300px;
+    width: 300px; 
+    background-repeat-x: no-repeat; 
+    background-repeat-y: no-repeat;
+} 
+
+.hero-text { 
+    grid-column-start: 7; 
+    grid-column-end: 11;
+} 
+
+.hero-cta { 
+    justify-self: center; 
+    grid-column-start: 3; 
+    grid-column-end: 11; 
+    margin: 2em; 
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: row; 
+    flex-direction: row; 
+    -webkit-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+    -webkit-justify-content: center; 
+    justify-content: center;
+} 
+
+p { 
+    color:   var(--secondaryText); 
+    font-size:   14;
+    scroll-behavior:  smooth; 
+    font-family:  Poppins,sans-serif; 
+    text-decoration:  none; 
+    margin:  0;
+    -webkit-margin-after: .5em; 
+    margin-block-end: .5em;
+} 
+
+.blend-title { 
+    margin:  0; 
+    font-family:  Poppins; 
+    font-weight:  700; 
+    letter-spacing:  -.04em;
+    font-size: 18px; 
+    line-height: 28px; 
+    color: var(--tertiaryText);
+} 
+
+h1 { 
+    scroll-behavior:   smooth; 
+    font-family:   Poppins,sans-serif; 
+    text-decoration:   none; 
+    margin:   0;
+    -webkit-margin-after:  .5em; 
+    margin-block-end:  .5em;
+    -webkit-margin-before: 1.5em; 
+    margin-block-start: 1.5em; 
+} 
+
+.large-title { 
+    font-size:  48px; 
+    line-height:  64px; 
+    color:  var(--primaryText);
+    margin: 0; 
+    font-family: Poppins; 
+    font-weight: 700; 
+    letter-spacing: -.04em;
+} 
+
+.slug { 
+    margin: 0; 
+    font-family: Poppins; 
+    font-weight: 500; 
+    font-size: 18px; 
+    letter-spacing: -.04em; 
+    line-height: 26px; 
+    color: var(--secondaryText);
+} 
+
+.hero .slug  { 
+    margin: .8em 0;
+} 
+
+a { 
+    color:   var(--primaryAccent);
+    scroll-behavior:  smooth; 
+    font-family:  Poppins,sans-serif; 
+    text-decoration:  none; 
+    margin:  0;
+    -webkit-margin-after: .5em; 
+    margin-block-end: .5em;
+} 
+
+.cta { 
+    margin: 8px; 
+    padding: 16px 32px; 
+    font-family: Poppins; 
+    font-weight: 600; 
+    font-size: 16px; 
+    text-decoration: none; 
+    background: -webkit-linear-gradient(var(--brightAccent) 100%,#fff 0); 
+    background: linear-gradient(var(--brightAccent) 100%,#fff 0); 
+    box-shadow: 0 5px 12px var(--shadowColor); 
+    border-radius: 12px; 
+    -webkit-transition: .3s ease-in-out; 
+    transition: .3s ease-in-out; 
+    display: -webkit-flex; 
+    display: flex;
+} 
+
+.cta.secondary { 
+    color:  var(--primaryAccent); 
+    background:  #fff;
+    text-shadow: 0 5px 12px var(--shadowColor);
+} 
+
+.cta.secondary:hover { 
+    -webkit-transform:  scale(1.05); 
+    transform:  scale(1.05); 
+    -webkit-transition:  .3s ease-in-out; 
+    transition:  .3s ease-in-out;
+    background: var(--primaryAccent); 
+    color: #fff;
+} 
+
+.cta.primary { 
+    text-shadow:  0 5px 12px var(--shadowColor);
+    color: #fff; 
+    background: -webkit-linear-gradient(bottom left,var(--primaryAccent),var(--secondaryAccent)); 
+    background: linear-gradient(to top right,var(--primaryAccent),var(--secondaryAccent));
+} 
+
+.cta.primary:hover { 
+    -webkit-transform: scale(1.05); 
+    transform: scale(1.05); 
+    -webkit-transition: .3s ease-in-out; 
+    transition: .3s ease-in-out;
+} 
+
+.slug > b  { 
+    font-weight: 700; 
+    background: -webkit-linear-gradient(bottom left,var(--primaryAccent),var(--secondaryAccent)); 
+    background: linear-gradient(to top right,var(--primaryAccent),var(--secondaryAccent)); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-shadow: 0 2px 6px var(--shadowColor);
+} 
+
+.cta.inline { 
+    margin: 32px; 
+    display: inline-block;
+} 
+
+.cta.primary { 
+    text-shadow:  0 5px 12px var(--shadowColor);
+    color: #fff; 
+    background: -webkit-linear-gradient(bottom left,var(--primaryAccent),var(--secondaryAccent)); 
+    background: linear-gradient(to top right,var(--primaryAccent),var(--secondaryAccent));
+} 
+
+.cta.primary:hover { 
+    -webkit-transform: scale(1.05); 
+    transform: scale(1.05); 
+    -webkit-transition: .3s ease-in-out; 
+    transition: .3s ease-in-out;
+} 
+
+.svg-inline--fa { 
+    display: inline-block; 
+    font-size: inherit; 
+    height: 1em; 
+    vertical-align: -.125em;
+} 
+
+.svg-inline--fa.fa-w-16 { 
+    width: 1em;
+} 
+
+.svg-inline--fa,svg:not(:root).svg-inline--fa { 
+    overflow: visible;
+} 
