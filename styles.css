@@ -45,7 +45,7 @@
     --primaryAccent: #0501c0; 
     --secondaryAccent: #0501c0; 
     --brightAccent: #f0f0ff; 
-    --shadowColor: rgba(130, 129, 168, 0.444); 
+    --shadowColor: rgba(130, 129, 168, 0); 
 } 
 
 .content { 
@@ -238,7 +238,7 @@ a {
 
 .cta.primary { 
     display: flex;
-    text-shadow:  0 5px 12px var(--shadowColor);
+    
     color: #fff; 
     background: -webkit-linear-gradient(bottom left,var(--primaryAccent),var(--secondaryAccent)); 
     background: linear-gradient(to top right,var(--primaryAccent),var(--secondaryAccent));
@@ -273,7 +273,7 @@ a {
 
 .cta.primary { 
     
-    text-shadow:  0 5px 12px var(--shadowColor);
+    
     color: #fff; 
     background: -webkit-linear-gradient(bottom left,var(--primaryAccent),var(--secondaryAccent)); 
     background: linear-gradient(to top right,var(--primaryAccent),var(--secondaryAccent));
