@@ -1,23 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins|Roboto"); 
 @import url("https://fonts.googleapis.com/css?family=Poppins|Roboto"); 
-.width-grid { 
+
+
+width-grid { 
     margin: 0; 
     display: grid; 
-    grid-gap: 1rem; 
-    gap: 1rem; 
-    grid-template-columns: 1fr 1280px 1fr;
 } 
 
 .spacing { 
     margin-bottom: 250px;
 } 
 
-.gradient { 
-    background: var(--bg-Image) no-repeat; 
-    background-size: 100% 700px;
-} 
-
 body { 
+    display: flex;
     scroll-behavior: smooth; 
     font-family: Poppins,sans-serif; 
     text-decoration: none; 
@@ -25,6 +20,7 @@ body {
 } 
 
 html { 
+    display: grid;
     scroll-behavior: smooth; 
     font-family: Poppins,sans-serif; 
     text-decoration: none; 
@@ -35,19 +31,19 @@ html {
     --primaryText: #70707a; 
     --secondaryText: #4b4b4f; 
     --tertiaryText: #ffffff; 
-    --primaryAccent: #020090; 
-    --secondaryAccent: #020090; 
+    --primaryAccent: #0501c0; 
+    --secondaryAccent: #0501c0; 
     --brightAccent: #f0f0ff; 
     --shadowColor: rgba(130, 129, 168, 0.444); 
 } 
 
 .content { 
-    grid-column-start: 2; 
-    grid-column-end: 3;
+    grid-column-start: 7; 
+    grid-column-end: 10;
 } 
 
 .grid { 
-    display: grid; 
+    display: flex; 
     grid-gap: 1rem; 
     gap: 1rem; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
@@ -59,22 +55,21 @@ html {
     height: 650px; 
     grid-template-rows: 3fr 1fr;
 } 
-
 .hero-image { 
-    grid-column-start: 3; 
-    grid-column-end: 6; 
-    background-image: url(dev-ed-wave.png); 
-    background-image: -webkit-image-set(url(dev-ed-wave.png) 2x,url(https://lukaspistrol.com/_next/static/media/avatar@3x.3089016b.png) 3x); 
-    background-image: image-set(url(dev-ed-wave.png) 2x,url(dev-ed-wave.png) 3x); 
-    border-radius: 50%;
-    background-repeat: no-repeat; 
-    background-position: 100%; 
-    filter: drop-shadow(0 8px 24px rgba(88,86,214,.15)); 
-    -webkit-filter: drop-shadow(0 8px 24px rgba(88,86,214,.15)); 
-    height: 300px;
-    width: 300px; 
-    background-repeat-x: no-repeat; 
-    background-repeat-y: no-repeat;
+      position: relative;
+        background-image: url(dev-ed-wave.png); 
+        background-image: -webkit-image-set(url(dev-ed-wave.png) 2x,url(https://lukaspistrol.com/_next/static/media/avatar@3x.3089016b.png) 3x); 
+        background-image: image-set(url(dev-ed-wave.png) 2x,url(dev-ed-wave.png) 3x); 
+        border-radius: 50%;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -o-border-radius: 50%;
+        height: 200px;
+        width: 290px; 
+        background-size:cover;
+        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
 } 
 
 .hero-text { 
@@ -150,10 +145,12 @@ h1 {
 } 
 
 .hero .slug  { 
+    display: flex;
     margin: .8em 0;
 } 
 
 a { 
+    display: flex;
     color:   var(--primaryAccent);
     scroll-behavior:  smooth; 
     font-family:  Poppins,sans-serif; 
@@ -181,21 +178,25 @@ a {
 } 
 
 .cta.secondary { 
+    display: flex;
     color:  var(--primaryAccent); 
     background:  #fff;
     text-shadow: 0 5px 12px var(--shadowColor);
 } 
 
 .cta.secondary:hover { 
+    display: flex;
     -webkit-transform:  scale(1.05); 
     transform:  scale(1.05); 
     -webkit-transition:  .3s ease-in-out; 
     transition:  .3s ease-in-out;
     background: var(--primaryAccent); 
     color: #fff;
+    letter-spacing: -.04em;
 } 
 
 .cta.primary { 
+    display: flex;
     text-shadow:  0 5px 12px var(--shadowColor);
     color: #fff; 
     background: -webkit-linear-gradient(bottom left,var(--primaryAccent),var(--secondaryAccent)); 
@@ -203,13 +204,14 @@ a {
 } 
 
 .cta.primary:hover { 
+    display: flex;
     -webkit-transform: scale(1.05); 
     transform: scale(1.05); 
     -webkit-transition: .3s ease-in-out; 
     transition: .3s ease-in-out;
 } 
 
-.slug > b  { 
+.slug  b  { 
     font-weight: 700; 
     background: -webkit-linear-gradient(bottom left,var(--primaryAccent),var(--secondaryAccent)); 
     background: linear-gradient(to top right,var(--primaryAccent),var(--secondaryAccent)); 
@@ -221,7 +223,7 @@ a {
 
 .cta.inline { 
     margin: 32px; 
-    display: inline-block;
+    display: flex;
 } 
 
 .cta.primary { 
