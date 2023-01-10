@@ -2,16 +2,22 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins|Roboto"); 
 
 
-width-grid { 
-    margin: 0; 
-    display: grid; 
-} 
+
 
 .spacing { 
-    margin-bottom: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
 } 
 
-body { 
+.body { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     display: flex;
     scroll-behavior: smooth; 
     font-family: Poppins,sans-serif; 
@@ -19,8 +25,13 @@ body {
     margin: 0;
 } 
 
-html { 
-    display: grid;
+.html { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
     scroll-behavior: smooth; 
     font-family: Poppins,sans-serif; 
     text-decoration: none; 
@@ -38,12 +49,23 @@ html {
 } 
 
 .content { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
     grid-column-start: 7; 
     grid-column-end: 10;
 } 
 
 .grid { 
-    display: flex; 
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     grid-gap: 1rem; 
     gap: 1rem; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
@@ -52,27 +74,27 @@ html {
 } 
 
 .hero { 
+  
     height: 650px; 
     grid-template-rows: 3fr 1fr;
 } 
-.hero-image { 
-      position: relative;
-        background-image: url(dev-ed-wave.png); 
-        background-image: -webkit-image-set(url(dev-ed-wave.png) 2x,url(https://lukaspistrol.com/_next/static/media/avatar@3x.3089016b.png) 3x); 
-        background-image: image-set(url(dev-ed-wave.png) 2x,url(dev-ed-wave.png) 3x); 
-        border-radius: 50%;
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -o-border-radius: 50%;
-        height: 200px;
-        width: 290px; 
-        background-size:cover;
-        background-repeat: no-repeat; 
-        background-repeat: no-repeat;
-} 
+
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    padding:5%;
+    position: relative;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: right;
+}
+    
+
 
 .hero-text { 
+    
     grid-column-start: 7; 
     grid-column-end: 11;
 } 
@@ -93,6 +115,7 @@ html {
 } 
 
 p { 
+    
     color:   var(--secondaryText); 
     font-size:   14;
     scroll-behavior:  smooth; 
@@ -104,7 +127,9 @@ p {
 } 
 
 .blend-title { 
-    margin:  0; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     font-family:  Poppins; 
     font-weight:  700; 
     letter-spacing:  -.04em;
@@ -114,6 +139,9 @@ p {
 } 
 
 h1 { 
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
     scroll-behavior:   smooth; 
     font-family:   Poppins,sans-serif; 
     text-decoration:   none; 
@@ -125,6 +153,9 @@ h1 {
 } 
 
 .large-title { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     font-size:  48px; 
     line-height:  64px; 
     color:  var(--primaryText);
@@ -135,6 +166,9 @@ h1 {
 } 
 
 .slug { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin: 0; 
     font-family: Poppins; 
     font-weight: 500; 
@@ -145,12 +179,16 @@ h1 {
 } 
 
 .hero .slug  { 
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin: .8em 0;
 } 
 
 a { 
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     color:   var(--primaryAccent);
     scroll-behavior:  smooth; 
     font-family:  Poppins,sans-serif; 
@@ -161,6 +199,9 @@ a {
 } 
 
 .cta { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin: 8px; 
     padding: 16px 32px; 
     font-family: Poppins; 
@@ -212,6 +253,7 @@ a {
 } 
 
 .slug  b  { 
+    
     font-weight: 700; 
     background: -webkit-linear-gradient(bottom left,var(--primaryAccent),var(--secondaryAccent)); 
     background: linear-gradient(to top right,var(--primaryAccent),var(--secondaryAccent)); 
@@ -222,11 +264,15 @@ a {
 } 
 
 .cta.inline { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin: 32px; 
     display: flex;
 } 
 
 .cta.primary { 
+    
     text-shadow:  0 5px 12px var(--shadowColor);
     color: #fff; 
     background: -webkit-linear-gradient(bottom left,var(--primaryAccent),var(--secondaryAccent)); 
@@ -234,6 +280,9 @@ a {
 } 
 
 .cta.primary:hover { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-transform: scale(1.05); 
     transform: scale(1.05); 
     -webkit-transition: .3s ease-in-out; 
@@ -241,6 +290,9 @@ a {
 } 
 
 .svg-inline--fa { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     display: inline-block; 
     font-size: inherit; 
     height: 1em; 
@@ -248,9 +300,15 @@ a {
 } 
 
 .svg-inline--fa.fa-w-16 { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 1em;
 } 
 
 .svg-inline--fa,svg:not(:root).svg-inline--fa { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     overflow: visible;
 } 
