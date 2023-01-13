@@ -2,13 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-attachment: fixed;
 }
 
 /* ----------------------
 	Timeline
 ------------------------*/
 .wrap {
-  background-color: #000000;
+  
   margin: 0 auto;
   max-width: 1140px;
   padding: 0 20px;
@@ -98,7 +99,7 @@ body.dragging section {
   cursor: pointer;
   height: 4px;
   width: 20px;
-  background: #222;
+  background: rgb(255, 0, 0);
 }
 
 .slider-navigation .tick:before {
@@ -117,8 +118,8 @@ body.dragging section {
   position: absolute;
   top: 0;
   right: 0;
-  background: #222;
-  color: rgb(0, 0, 0);
+  background: rgb(220, 220, 220);
+  color: rgb(201, 201, 201);
   font-weight: 300;
   font-size: 12px;
   padding: 3px 8px;
@@ -147,16 +148,14 @@ body.dragging section {
 }
 
 body.dragging {
-  
-  background-color: #000000
-  ;
+  background-attachment: fixed;
   cursor: -webkit-grab;
   cursor: grab;
 }
 
 body.dragging .nav-pointer {
-
-  background-color: #000000;
+  background-attachment: fixed;
+ 
   -webkit-transition: none;
   transition: none;
 }
@@ -216,7 +215,7 @@ body.dragging .nav-pointer {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(35,39,65);
+ 
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
